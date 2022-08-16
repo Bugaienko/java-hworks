@@ -1,3 +1,4 @@
+// Sergij Bugaienko
 public class Task4 {
     public static void main(String[] args) {
         int number = 128;
