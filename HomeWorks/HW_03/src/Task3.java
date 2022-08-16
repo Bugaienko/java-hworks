@@ -1,5 +1,7 @@
 import java.util.Scanner;
 
+// Sergij Bugaienko
+
 public class Task3 {
     public static void main(String[] args) {
         double radius;
