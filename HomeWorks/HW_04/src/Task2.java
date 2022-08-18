@@ -3,9 +3,10 @@ import java.util.Scanner;
 // Sergii Bugaienko
 public class Task2 {
     public static void main(String[] args) {
-        final double CROSS_COURSE = 0.973;
 
-        EURToUSDConverter(CROSS_COURSE);
+        int eurAmount = getAmount();
+        System.out.printf("За %d EUR Вы можете получить %.2f USD\n", eurAmount, EURToUSDConverter(eurAmount));
+
     }
 
     static int getAmount() {
@@ -15,11 +16,9 @@ public class Task2 {
         return euroAmount;
     }
 
-    static boolean EURToUSDConverter(double course) {
-        int eurAmount = getAmount();
-        double usdAmount = eurAmount * course;
-        System.out.printf("За %d EUR Вы можете получить %.2f USD\n", eurAmount, usdAmount);
-        return true;
+    static double EURToUSDConverter(int eurAmount) {
+        final double CROSS_COURSE = 0.973;
+        return eurAmount * CROSS_COURSE;
     }
 
     //Сколько евро вы хотели бы обменять: 1000
