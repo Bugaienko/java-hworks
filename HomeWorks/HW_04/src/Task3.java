@@ -23,7 +23,7 @@ public class Task3 {
         yearOfBirth = getInt();
 
         //проверяем корректность введения числа
-        while (yearOfBirth < 1000) {
+        while (yearOfBirth < 1000 || yearOfBirth > 2022) {
             yearOfBirth = reenterYear();
         }
 
