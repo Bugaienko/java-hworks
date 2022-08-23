@@ -5,6 +5,7 @@ public class Task2 {
     public static void main(String[] args) {
 
         int eurAmount = getAmount();
+
         System.out.printf("За %d EUR Вы можете получить %.2f USD\n", eurAmount, EURToUSDConverter(eurAmount));
 
     }
