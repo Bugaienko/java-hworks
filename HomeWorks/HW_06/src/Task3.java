@@ -32,7 +32,28 @@ public class Task3 {
     static boolean checkingInput(String strInput) {
         String regExpPositiveDouble = "(\\d+)(,?)(\\d*)";
         String regExpPositiveInt = "(\\d+)";
+        if (!strInput.matches(regExpPositiveInt)) {
+            printingErrors(strInput);
+            }
+
         return strInput.matches(regExpPositiveInt);
+    }
+
+    static void printingErrors(String strInput) {
+        System.out.println("Во вводе содержаться недопустимые символы!");
+        if (strInput.matches("(.*)(\\s+)(.*)")) {
+            System.out.println("В строке есть пробел");
+        }
+        if (strInput.matches("(.*)(,+)(.*)")) {
+            System.out.println("В строке есть точка или запятая");
+        }
+        if (strInput.matches("((.*)[a-zA-Zа-яА-Я]+)(.*)")) {
+            System.out.println("В строке есть буквы");
+        }
+        if (strInput.matches("(.*)(-+)(.*)")) {
+            System.out.println("В строке знак минус");
+        }
+
     }
 
     static String getInput() {
