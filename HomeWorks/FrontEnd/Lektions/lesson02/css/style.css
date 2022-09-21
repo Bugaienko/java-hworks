@@ -1,0 +1,53 @@
+body {
+    background-color: antiquewhite;
+    text-align: center;
+}
+img {
+    width: 300px;
+    height: 400px;
+}
+.hero {
+    color: navy;
+    font-weight: 500;
+}
+.forest li {
+    list-style-type: upper-latin;
+}
+.badguys li{
+    list-style-type: upper-roman;
+}
+
+ul {
+    list-style-type: circle;
+}
+#ol_list_italic {
+    font-style: italic;
+}
+.film_card {
+    display: inline-block;
+    width: 370px;
+    border: 2px solid silver;
+    border-radius: 10px;
+    padding: 7px;
+    padding-bottom: 15px;
+    margin: 0 10px 20px 0;
+}
+h1 {
+    font-size: 48px;
+    color: purple;
+}
+a {
+    text-decoration: none;
+    color: green;
+}
+.link_menu {
+    margin-right: 20px;
+    font-size: 18px;
+}
+.menu {
+    width: 38%;
+    border: 1px solid coral;
+    border-radius: 10px;
+    padding: 8px;
+    display: inline-block;
+}
