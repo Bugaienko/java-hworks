@@ -10,48 +10,185 @@
 </head>
 <body>
 <h1>Online cinema</h1>
-<div class="menu">
-    <a class="link_menu" href = "#top">TOP фильмы</a>
-    <a class="link_menu" href = "">Боевики</a>
-    <a class="link_menu" href = "">Фантастика</a>
+<div class = "menu">
+    <a class = "link_menu" href = "#top">TOP фильмы</a>
+    <a class = "link_menu" href = "#actions">Боевики</a>
+    <a class = "link_menu" href = "#comedy">Комедии</a>
 </div>
 
-<h2 id="top">TOP фильмов</h2>
-<div class="film_card">
-<h3>Интерсталлар</h3>
-<img src = "img/Interstellar_2014.jpg" alt = "Interstellar">
-<ul>
-    <li>Крутой сюжет</li>
-    <li class="hero">Актерская игра - шедевральна</li>
-    <li>Атмосферные саундтреки</li>
-</ul>
-<a href = "https://ru.wikipedia.org/wiki/%D0%98%D0%BD%D1%82%D0%B5%D1%80%D1%81%D1%82%D0%B5%D0%BB%D0%BB%D0%B0%D1%80" target="_blank">Википедия</a>
+<div class="section__films top">
+    <h2 class="h2_section" id = "top">TOP фильмов</h2>
+
+    <div class = "film_card">
+    <h3>Интерсталлар</h3>
+    <img src = "img/Interstellar_2014.jpg" alt = "Interstellar">
+    <div class = "card__prefer">
+        <ul>
+            <li>Крутой сюжет</li>
+            <li>Актерская игра - шедевральна</li>
+            <li>Атмосферные саундтреки</li>
+        </ul>
+    </div>
+    <form class="card__button" target="_blank" action="https://ru.wikipedia.org/wiki/%D0%98%D0%BD%D1%82%D0%B5%D1%80%D1%81%D1%82%D0%B5%D0%BB%D0%BB%D0%B0%D1%80">
+<!--    <a href = "https://ru.wikipedia.org/wiki/%D0%98%D0%BD%D1%82%D0%B5%D1%80%D1%81%D1%82%D0%B5%D0%BB%D0%BB%D0%B0%D1%80"-->
+<!--       target = "_blank">Википедия</a>-->
+        <input type="submit" value="Википедия">
+    </form>
 </div>
 
-<div class="film_card">
-<h3>Форест Гамп</h3>
-<img src = "img/Forest.jpg" alt = "Interstellar">
-<ol class="forest" id="ol_list_italic">
-    <li>Фильм получил 38 наград по всему миру, включая 6 премий «Оскар»
-    </li>
-    <li class="hero">Потрясающая игра Тома Хэнкса
-    </li>
-    <li>Этот фильм никого не оставит равнодушным
-    </li>
-</ol>
-<a href = "https://ru.wikipedia.org/wiki/%D0%A4%D0%BE%D1%80%D1%80%D0%B5%D1%81%D1%82_%D0%93%D0%B0%D0%BC%D0%BF" target="_blank">Википедия</a>
+<div class = "film_card">
+    <h3>Форест Гамп</h3>
+    <img src = "img/Forest.jpg" alt = "Forst Gamp">
+
+    <div class = "card__prefer">
+        <ul>
+            <li>Фильм получил 38 наград по всему миру, включая 6 премий «Оскар»
+            </li>
+            <li>Потрясающая игра Тома Хэнкса
+            </li>
+            <li>Этот фильм никого не оставит равнодушным
+            </li>
+        </ul>
+    </div>
+    <form class="card__button" target="_blank" action="https://ru.wikipedia.org/wiki/%D0%A4%D0%BE%D1%80%D1%80%D0%B5%D1%81%D1%82_%D0%93%D0%B0%D0%BC%D0%BF">
+        <input type="submit" value="Википедия">
+    </form>
+<!--    <a href = "https://ru.wikipedia.org/wiki/%D0%A4%D0%BE%D1%80%D1%80%D0%B5%D1%81%D1%82_%D0%93%D0%B0%D0%BC%D0%BF"-->
+<!--       target = "_blank">Википедия</a>-->
 </div>
 
-<div class="film_card">
-<h3>Плохие парни</h3>
-<img src = "img/badguys.jpg" alt = "Interstellar">
-<ol class="badguys">
-    <li>Захватывающий сюжет</li>
-    <li class="hero">Уморительный дуэт Джерри Брукхаймера и
-        Уилла Смита
-    </li>
-</ol>
-<a href = "https://www.kinopoisk.ru/film/3908/" target="_blank">Википедия</a>
+<div class = "film_card">
+    <h3>Плохие парни</h3>
+    <img src = "img/badguys.jpg" alt = "Bad guys">
+    <div class = "card__prefer">
+        <ul>
+            <li>Захватывающий сюжет</li>
+            <li>Уморительный дуэт Джерри Брукхаймера и
+                Уилла Смита
+            </li>
+        </ul>
+    </div>
+    <form class="card__button" target="_blank" action="https://www.kinopoisk.ru/film/3908/">
+        <input type="submit" value="Википедия">
+    </form>
+<!--    <a href = "https://www.kinopoisk.ru/film/3908/" target = "_blank">Википедия</a>-->
+</div>
+</div>
+<div class="section__films actions">
+    <h2 class="h2_section" id = "actions">Боевики</h2>
+
+    <div class = "film_card">
+        <h3>Интерсталлар</h3>
+        <img src = "img/Interstellar_2014.jpg" alt = "Interstellar">
+        <div class = "card__prefer">
+            <ul>
+                <li>Крутой сюжет</li>
+                <li>Актерская игра - шедевральна</li>
+                <li>Атмосферные саундтреки</li>
+            </ul>
+        </div>
+        <form class="card__button" target="_blank" action="https://ru.wikipedia.org/wiki/%D0%98%D0%BD%D1%82%D0%B5%D1%80%D1%81%D1%82%D0%B5%D0%BB%D0%BB%D0%B0%D1%80">
+            <!--    <a href = "https://ru.wikipedia.org/wiki/%D0%98%D0%BD%D1%82%D0%B5%D1%80%D1%81%D1%82%D0%B5%D0%BB%D0%BB%D0%B0%D1%80"-->
+            <!--       target = "_blank">Википедия</a>-->
+            <input type="submit" value="Википедия">
+        </form>
+    </div>
+
+    <div class = "film_card">
+        <h3>Форест Гамп</h3>
+        <img src = "img/Forest.jpg" alt = "Forst Gamp">
+
+        <div class = "card__prefer">
+            <ul>
+                <li>Фильм получил 38 наград по всему миру, включая 6 премий «Оскар»
+                </li>
+                <li>Потрясающая игра Тома Хэнкса
+                </li>
+                <li>Этот фильм никого не оставит равнодушным
+                </li>
+            </ul>
+        </div>
+        <form class="card__button" target="_blank" action="https://ru.wikipedia.org/wiki/%D0%A4%D0%BE%D1%80%D1%80%D0%B5%D1%81%D1%82_%D0%93%D0%B0%D0%BC%D0%BF">
+            <input type="submit" value="Википедия">
+        </form>
+        <!--    <a href = "https://ru.wikipedia.org/wiki/%D0%A4%D0%BE%D1%80%D1%80%D0%B5%D1%81%D1%82_%D0%93%D0%B0%D0%BC%D0%BF"-->
+        <!--       target = "_blank">Википедия</a>-->
+    </div>
+
+    <div class = "film_card">
+        <h3>Плохие парни</h3>
+        <img src = "img/badguys.jpg" alt = "Bad guys">
+        <div class = "card__prefer">
+            <ul>
+                <li>Захватывающий сюжет</li>
+                <li>Уморительный дуэт Джерри Брукхаймера и
+                    Уилла Смита
+                </li>
+            </ul>
+        </div>
+        <form class="card__button" target="_blank" action="https://www.kinopoisk.ru/film/3908/">
+            <input type="submit" value="Википедия">
+        </form>
+        <!--    <a href = "https://www.kinopoisk.ru/film/3908/" target = "_blank">Википедия</a>-->
+    </div>
+</div>
+<div class="section__films comedy">
+    <h2 class="h2_section" id = "comedy">Комедии</h2>
+
+    <div class = "film_card">
+        <h3>Интерсталлар</h3>
+        <img src = "img/Interstellar_2014.jpg" alt = "Interstellar">
+        <div class = "card__prefer">
+            <ul>
+                <li>Крутой сюжет</li>
+                <li>Актерская игра - шедевральна</li>
+                <li>Атмосферные саундтреки</li>
+            </ul>
+        </div>
+        <form class="card__button" target="_blank" action="https://ru.wikipedia.org/wiki/%D0%98%D0%BD%D1%82%D0%B5%D1%80%D1%81%D1%82%D0%B5%D0%BB%D0%BB%D0%B0%D1%80">
+            <!--    <a href = "https://ru.wikipedia.org/wiki/%D0%98%D0%BD%D1%82%D0%B5%D1%80%D1%81%D1%82%D0%B5%D0%BB%D0%BB%D0%B0%D1%80"-->
+            <!--       target = "_blank">Википедия</a>-->
+            <input type="submit" value="Википедия">
+        </form>
+    </div>
+
+    <div class = "film_card">
+        <h3>Форест Гамп</h3>
+        <img src = "img/Forest.jpg" alt = "Forst Gamp">
+
+        <div class = "card__prefer">
+            <ul>
+                <li>Фильм получил 38 наград по всему миру, включая 6 премий «Оскар»
+                </li>
+                <li>Потрясающая игра Тома Хэнкса
+                </li>
+                <li>Этот фильм никого не оставит равнодушным
+                </li>
+            </ul>
+        </div>
+        <form class="card__button" target="_blank" action="https://ru.wikipedia.org/wiki/%D0%A4%D0%BE%D1%80%D1%80%D0%B5%D1%81%D1%82_%D0%93%D0%B0%D0%BC%D0%BF">
+            <input type="submit" value="Википедия">
+        </form>
+        <!--    <a href = "https://ru.wikipedia.org/wiki/%D0%A4%D0%BE%D1%80%D1%80%D0%B5%D1%81%D1%82_%D0%93%D0%B0%D0%BC%D0%BF"-->
+        <!--       target = "_blank">Википедия</a>-->
+    </div>
+
+    <div class = "film_card">
+        <h3>Плохие парни</h3>
+        <img src = "img/badguys.jpg" alt = "Bad guys">
+        <div class = "card__prefer">
+            <ul>
+                <li>Захватывающий сюжет</li>
+                <li>Уморительный дуэт Джерри Брукхаймера и
+                    Уилла Смита
+                </li>
+            </ul>
+        </div>
+        <form class="card__button" target="_blank" action="https://www.kinopoisk.ru/film/3908/">
+            <input type="submit" value="Википедия">
+        </form>
+        <!--    <a href = "https://www.kinopoisk.ru/film/3908/" target = "_blank">Википедия</a>-->
+    </div>
 </div>
 
 
