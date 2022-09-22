@@ -58,7 +58,6 @@ a {
     width: 80%;
     text-align: start;
     padding: 5px;
-    /*border: 1px solid silver;*/
     margin: 0 auto;
 }
 
@@ -70,10 +69,7 @@ a {
     border-radius: 7px;
     cursor: pointer;
 }
-/*.card__button a{*/
-/*    text-decoration: none;*/
-/*    !*color: navy;*!*/
-/*}*/
+
 .card__button input:hover{
     background-color: navy;
     color: whitesmoke;
@@ -83,6 +79,7 @@ a {
     margin-top: 25px;
     color: darkgreen;
 }
+
 .top .film_card {
     background-color: rgba(0, 255, 255, 0.25);
 }
