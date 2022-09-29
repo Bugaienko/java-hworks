@@ -1,0 +1,66 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+.item {
+    /*а это влияет на дочерний контент*/
+    margin-right: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /*         */
+
+    width: 100px;
+    color: white;
+    margin-bottom: 10px;
+    text-align: center;
+    font-size: 24px;
+
+    flex-basis: 400px;
+    /*flex-grow: 1; по умолчанию 0. Если для всех*/
+}
+.item1 {
+    background-color: green;
+    height: 100px;
+    /*свойства для дочерних flex элемента  */
+    align-self: start;
+
+    /*flex-basis: 100px; */
+    /*flex-basis: аналог width для flex элементов. работает для главной оси;*/
+
+}
+.item2 {
+    background-color: blue;
+    height: 50px;
+    /*flex-grow: 1;*/
+    order: 1;
+
+}
+.item3 {
+    background-color: red;
+    height: 150px;
+}
+.item4 {
+    background-color: orange;
+    height: 100px;
+    align-self: flex-end;
+    order: -4;
+}
+
+.container {
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    /*row, column. row-reverse, column-revers*/
+
+    /*управление главной осью
+    flex-start, flex-end, center, space-around, space-between, space-evenly */
+    justify-content: space-evenly;
+
+    /*работа с перпендекулярной осью
+    flex-start, flex-end, center, stretch, baseline,    */
+    align-items: center;
+
+    flex-wrap: nowrap;
+    /*nowrap, wrap, wrap-reverse  */
+}

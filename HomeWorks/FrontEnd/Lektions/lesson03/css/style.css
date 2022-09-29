@@ -1,0 +1,66 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font-weight: normal;
+    box-sizing: border-box; /*если я задам ширину 300, она такой останется, независимо от внутренних отступов*/
+}
+
+.item {
+    width: 300px;
+    background-color: lightblue;
+    height: 100px;
+    margin-top: 20px;
+}
+
+.item.item1 {
+    background-color: yellowgreen;
+}
+
+.item2, .item3 {
+    background-color: darksalmon;
+}
+
+/*второй пример ========== */
+.li {
+    font-size: 28px;
+    color: black;
+}
+
+ol .li {
+    color: red;
+}
+
+ul > .li {
+    color: green;
+}
+
+/*третий пример* =================/
+ */
+h2 + p {
+    font-style: italic;
+}
+
+h1 ~ p {
+    color: aqua;
+}
+
+/*четвертый пример ================*/
+a[href='google.com'] {
+    color: red;
+}
+
+/*начинается с */
+a[href^='google '] {
+    color: green;
+}
+
+/*оканчивается на*/
+a[href$='.de'] {
+    color: cyan;
+}
+
+/*содержит в себе*/
+a[href*='oogg'] {
+    color: purple;
+}
