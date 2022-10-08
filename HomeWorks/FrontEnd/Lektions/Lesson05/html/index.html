@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang = "en">
+<head>
+    <meta charset = "UTF-8">
+    <meta name = "viewport"
+          content = "width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv = "X-UA-Compatible" content = "ie=edge">
+    <title>Forms</title>
+    <link rel = "stylesheet" href = "../css/style.css">
+</head>
+<body>
+<form action = "" method="POST">
+    <label for="name">Name</label>
+    <input id="name" type = "text" placeholder="Введите имя" value="Gor"/>
+    <label>
+        <p>Number</p>
+    <input type = "number" name="number"/>
+    </label>
+    <input type = "password" name="password"/>
+    <label>
+        E-mail<span class="redspan">*</span>
+    <input type = "email" name="email"/>
+    </label>
+
+    <input type = "color" name="color"/>
+    <input type = "date" name="date"/>
+<!--    <input type = "file"/>-->
+    <input type = "tel"/>
+    <label>
+        Чай
+        <input type="checkbox" name="tea">
+    </label>
+    <label>
+        Кофе
+        <input type="checkbox" name="coffee">
+    </label>
+    <label>
+        Потанцуем
+        <input type="checkbox" name="tanzen" checked>
+    </label>
+    <div>
+        <label>
+            Male
+            <input type="radio" name="gender" value="male">
+        </label>
+        <label>
+            Female
+            <input type="radio" name="gender" value="female">
+        </label>
+    </div>
+
+    <textarea rows="5">
+
+    </textarea>
+    <select name="language">
+        <optgroup label="">
+        <option value="ru">RU</option>
+        <option value="en">EN</option>
+        </optgroup>
+        <option value="de">DE</option>
+    </select>
+
+    <!--<input type="submit" />-->
+<!--    <button type = "button">Send</button>-->
+    <button type = "submit">Send</button>
+
+</form>
+
+</body>
+</html>
