@@ -1,0 +1,643 @@
+@import url('https://fonts.googleapis.com/css2?family=Alegreya:wght@400;700&family=Cormorant:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Alegreya', serif;
+    color: #000;
+    /*background-color: black;*/
+}
+
+.burger {
+    display: none;
+}
+
+main, section {
+    background-color: #fff;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    /*width: 100%;*/
+}
+
+header {
+    position: fixed;
+    background-color: rgba(255, 255, 255, 0.72);
+    top: 0;
+    width: 100%;
+    /*opacity: 72%;*/
+}
+
+header * {
+    background-color: transparent;
+}
+
+header .container {
+    max-width: 1600px;
+    margin: 0 auto;
+    display: flex;
+    padding: 13px 87px 13px 13px;
+    /*gap: 97px;*/
+    /*justify-content: center;*/
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+header .container * {
+    opacity: 100%;
+}
+
+.logo-div {
+    margin-right: 15px;
+}
+
+nav {
+    display: flex;
+    gap: 30px;
+}
+
+/*nav a:not(:last-child) {*/
+/*    margin-right: 30px;*/
+/*}*/
+
+nav a {
+    font-size: 27px;
+    line-height: 37px;
+    border-bottom: 2px solid transparent;
+    transition: 0.5s;
+    position: relative;
+}
+
+nav a:after {
+    content: '';
+    width: 0;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 2px;
+    background-color: black;
+    transition: 0.4s;
+}
+
+nav a:hover::after {
+    width: 100%;
+}
+
+.search-wrapper {
+    position: relative;
+}
+
+.search-wrapper input::placeholder {
+    color: #5B5B5B;
+    font-size: 18px;
+}
+
+.search-icon {
+    position: absolute;
+    top: 50%;
+    left: 0px;
+    transform: translateY(-50%);
+    font-size: 23px;
+
+}
+
+.search-wrapper input {
+    font-size: 18px;
+    line-height: 24px;
+    border: none;
+    border-bottom: 2px solid #000;
+    outline: none;
+    padding: 12px 5px 12px 36px;
+}
+
+.basket-wrapper {
+    position: relative;
+}
+
+.shop-count {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    bottom: 4px;
+    right: 4px;
+    background-color: blueviolet;
+    color: #fff;
+    font-family: sans-serif;
+    text-align: center;
+    line-height: 20px;
+    font-size: 12px;
+}
+
+.topic .container {
+    max-width: 1600px;
+    /*height: 500px;*/
+    display: flex;
+    /*flex-direction: row;*/
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    background-color: white;
+}
+
+.topic-left {
+    /*padding: 220px 0 0 100px;*/
+    padding: 0 0 10px 100px;
+    width: 40%;
+}
+
+.topic-left h1 {
+    font-weight: 400;
+    font-size: 54px;
+    line-height: 64px;
+    font-family: 'Cormorant', serif;
+}
+
+.topic-left p {
+    font-size: 27px;
+    line-height: 37px;
+    margin-bottom: 32px;
+}
+
+.topic-left button {
+    font-weight: 700;
+    font-size: 35px;
+    line-height: 48px;
+    padding: 23px 49px;
+    cursor: pointer;
+    background-color: transparent;
+}
+
+.topic-left button:hover {
+    transform: scale(1.05);
+}
+
+.topic-right {
+    width: 53%;
+    background: url("../img/first_bg.png") no-repeat center;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.topic-right__buttons {
+    padding: 0 047px 35px;
+}
+
+.topic-right__buttons button {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 6px;
+    border: none;
+    height: 30px
+}
+.topic-right__buttons button:hover {
+    box-shadow:  0 0 4px #932794;
+}
+
+.topic-right__buttons button:last-child img {
+    transform: rotate(180deg);
+}
+
+.topic-right__details {
+    padding: 31px 32px 12px;
+    background-color: rgba(255, 255, 255, 0.57);
+    text-align: center;
+}
+
+.topic-right__details h3, .topic-right__details p {
+    font-weight: 700;
+    font-size: 29px;
+    line-height: 39px;
+    color: #fff;
+}
+
+.topic-right__details button {
+    background-color: #932794;
+    margin-top: 5px;
+    color: #fff;
+    padding: 12px 32px;
+    border: none;
+    font-weight: 700;
+    font-size: 23px;
+    line-height: 31px;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.topic-right__details button:hover {
+    transform: scale(1.05);
+}
+
+.container {
+    max-width: 1600px;
+    padding: 65px 0;
+    margin: 0 auto;
+}
+
+.offer1_section .offers-1, .sale_section .offers-2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.offers-1 .offer, .offers-2 .sale {
+    width: 48%;
+    height: 400px;
+}
+
+.offers-1 .offer.left, .offers-2 .sale.left {
+    background: url("../img/offer1-lft_bg.png") no-repeat center;
+    background-size: cover;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.offers-2 .sale.left {
+    background: url("../img/offer2-rgt_bg.png") no-repeat center;
+}
+
+.offers-1 .offer.right, .offers-2 .sale.right {
+    background: url("../img/offer1-rgt_bg.png") no-repeat center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.offers-2 .sale.right {
+    background: url("../img/offer2-lft_bg.png") no-repeat center;
+}
+
+.offer.left .offer_content, .sale.left .offer_content {
+    padding: 34px 39px;
+}
+
+.offer.left .offer_content h3, .sale.left .offer_content h3 {
+    font-family: 'Alegreya';
+    font-weight: 700;
+    font-size: 34px;
+    line-height: 46px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.offer.left .offer_content p, .sale.left .offer_content p {
+    padding: 4px 23px;
+    border: 1px solid #fff;
+    font-family: 'Alegreya';
+    font-weight: 700;
+    font-size: 34px;
+    line-height: 46px;
+    text-align: center;
+    width: fit-content;
+    color: #FFF;
+    margin-top: 11px;
+    margin-bottom: 11px;
+}
+
+.offer.left .offer_content button, .sale.left .offer_content button {
+    padding: 11px 32px;
+    background-color: #932794;
+    font-family: 'Alegreya', serif;
+    font-weight: 700;
+    font-size: 23px;
+    line-height: 31px;
+    text-align: center;
+    color: #FFF;
+    border: 1px solid #932794;
+    transition: 0.4s;
+}
+.offer.left .offer_content button:hover, .sale.left .offer_content button:hover {
+    transform: scale(1.05);
+}
+
+.offer.right .offer_content, .sale.right .offer_content {
+    padding: 60px 92px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+
+}
+
+.offer.right .text, .sale.right .text {
+    font-family: 'Alegreya', serif;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 65px;
+    text-align: center;
+    color: #FFFFFF;
+    align-self: center;
+    border: 2px solid #fff;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding: 2.5rem 3rem;
+}
+
+.items .container, .items2 .container {
+    max-width: 1600px;
+    padding: 0 100px;
+}
+
+.items .items-new, .items2 .items2-new {
+    width: 100%;
+    margin-top: 55px;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+}
+
+.items .item-card, .items2 .item-card {
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+    justify-content: flex-start;
+    max-width: 220px;
+    border: 1px solid #000;
+    position: relative;
+    padding: 5px;
+    transition: 0.6s;
+}
+.items .item-card:hover, .items2 .item-card:hover {
+    box-shadow: 0 0 6px #932794;
+}
+
+.items .item-card .sale, .items2 .item-card .sale {
+    position: absolute;
+    top: 7px;
+    right: 7px;
+    width: 50px;
+}
+
+.items .item-card .sale-img, .items2 .item-card .sale-img {
+    width: 100%;
+}
+
+.items .item-card .item-img, .items2 .item-card .item-img {
+    max-width: 220px;
+}
+
+.items .item-card *, .items2 .item-card * {
+    /*align-self: center;*/
+}
+
+.items .item-card .prise, .items2 .item-card .prise {
+    align-self: center;
+    display: flex;
+    justify-content: center;
+    gap: 17px;
+    align-items: center;
+}
+
+.items .item-card p, .items2 .item-card p {
+    align-self: center;
+    font-family: 'Alegreya', serif;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 27px;
+    text-align: center;
+    margin: 6px 0;
+    color: #000000;
+}
+
+.items .prise-p, .items2 .prise-p {
+    font-family: 'Alegreya', serif;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 27px;
+    text-align: center;
+    color: #000000;
+}
+
+.items .item-card .prise button, .items2 .item-card .prise button {
+    background-color: #fff;
+    color: #000;
+    width: 66px;
+    height: 24px;
+    border: 1px solid #000;
+    /*align-self: center;*/
+    font-family: 'Alegreya', serif;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 19px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.items .item-card .prise button:hover, .items2 .item-card .prise button:hover {
+    background-color: rgba(147, 39, 148, 0.51);
+}
+
+.items .arrow-left, .items2 .arrow-left {
+    display: flex;
+    align-items: center;
+}
+
+.items .arrow-left:last-child img, .items2 .arrow-left:last-child img {
+    transform: rotate(180deg);
+}
+
+.items h3, .items2 h3 {
+    font-family: 'Alegreya', serif;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 65px;
+    color: #000000;
+}
+
+.brands .container {
+    margin-bottom: 24px;
+}
+
+.brands .arrow-brand img {
+    width: 50px;
+    display: none;
+}
+
+.brands .arrow-brand:last-child {
+    transform: rotate(180deg);
+}
+
+.brands .brands-items {
+    display: flex;
+    justify-content: space-between;
+    align-content: flex-start;
+    flex-wrap: wrap;
+    gap: 50px;
+}
+
+.brands h3 {
+    font-family: 'Alegreya', serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 65px;
+    color: #000000;
+    margin-bottom: 44px;
+}
+
+.motivation .container {
+    padding: 0 240px;
+    margin-bottom: 240px;
+}
+
+.motivation .motivation-card {
+    width: 22%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    /*border: 1px solid lime;*/
+}
+
+.motivation .motivation-card img {
+    width: 77%;
+}
+
+.motivation .motivation-items {
+    display: flex;
+    justify-content: space-between;
+}
+
+.motivation .motivation-card p {
+    font-family: 'Alegreya', serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 34px;
+    line-height: 46px;
+    text-align: center;
+}
+
+.motivation h3 {
+    font-family: 'Cormorant', serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 87px;
+    line-height: 105px;
+    text-align: center;
+    margin: 24px auto;
+}
+
+footer {
+    background-color: #C188C1;
+}
+
+footer .container {
+    background-color: transparent;
+    padding: 20px 100px 50px;
+}
+
+footer .footer-content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+footer .contacts {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 24px;
+}
+
+footer .contacts p {
+    font-family: 'Alegreya', serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 44px;
+    line-height: 60px;
+    text-align: center;
+}
+
+footer .subscribe {
+    display: flex;
+    gap: 25px;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 24px;
+}
+
+footer .subscribe input {
+    background-color: #fff;
+    border: 1px solid black;
+    width: 45%;
+    font-family: 'Alegreya', serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 36px;
+    padding: 5px 10px 5px;
+    outline: 1px solid #932794;
+
+}
+
+footer .subscribe input::placeholder {
+    font-family: 'Alegreya', serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 27px;
+
+    color: #8D8888;
+}
+
+footer .subscribe button {
+    padding: 14px 64px;
+    background-color: #000;
+    color: #fff;
+    font-family: 'Alegreya', serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 49px;
+}
+
+footer .social {
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 24px;
+}
+
+footer .social img {
+    width: 60px;
+}
+
+footer .copyright {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    align-items: center;
+}
+
+footer .copyright img {
+    max-width: 57px;
+}
+
+footer .copyright p {
+    font-family: 'Alegreya', serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 49px;
+    text-align: center;
+    color: #4D4848;
+}
+footer .logo-phone {
+    display: none;
+}

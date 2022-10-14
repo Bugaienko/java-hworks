@@ -1,0 +1,227 @@
+@media screen and  (max-width: 768px) {
+    nav, .search-wrapper {
+        display: none;
+    }
+
+    .container {
+        padding: 0;
+    }
+
+    header .container {
+        padding: 33px 19px;
+        /*justify-content: center;*/
+    }
+
+    .topic-right {
+        width: 100%;
+        height: 100vh;
+        justify-content: center;
+        margin-bottom: 0;
+    }
+
+
+    .topic-right__buttons {
+        display: none;
+    }
+
+    .burger {
+        display: block;
+        max-width: 68px;
+    }
+
+    .logo-div {
+        margin-right: 0;
+        width: 93px;
+    }
+
+    .topic-left {
+        display: none;
+    }
+
+    .offer1_section .offers-1, .sale_section .offers-2 {
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+    }
+
+    .offer1_section .offers-1 {
+        flex-direction: column-reverse;
+    }
+
+    .offers-1 .offer, .offers-2 .sale {
+        width: 100%;
+        height: 415px;
+    }
+
+    .offer.right .text, .sale.right .text {
+        padding: 35px 20px;
+        font-size: 44px;
+        line-height: 1.4;
+
+    }
+
+    .offer.right .offer_content, .sale.right .offer_content {
+        padding: 70px 40px;
+    }
+
+    .items .items-new, .items2 .items2-new {
+        width: 100%;
+        margin-top: 20px;
+        display: flex;
+        gap: 25px;
+        justify-content: center;
+        align-content: center;
+    }
+
+    .items .items-new .item-card, .items2 .items2-new .item-card {
+        display: none;
+    }
+
+    .items .items-new .item-card:nth-child(2), .items2 .items2-new .item-card:nth-child(2) {
+        display: block;
+    }
+
+    .items h3, .items2 h3 {
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .items .container, .items2 .container {
+        padding: 0 30px;
+        margin: 60px auto;
+    }
+
+    .items .arrow-left img, .items2 .arrow-left img {
+        width: 50px;
+    }
+
+    .brands .arrow-brand img {
+        display: block;
+    }
+
+    .brands .brands-wrapper {
+        display: flex;
+        gap: 28px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .brands .brands-items {
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        flex-wrap: wrap;
+        gap: 50px;
+    }
+
+    .brands .brands-items .brands-item:not(:first-child) {
+        display: none;
+    }
+
+    .brands h3 {
+        margin-bottom: 25px;
+        text-align: center;
+    }
+
+    .motivation .container {
+        padding: 15px 60px;
+        margin-bottom: 0px;
+    }
+
+    .motivation .motivation-card {
+        width: 48%;
+        margin-bottom: 30px;
+    }
+
+    .motivation .motivation-items {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .motivation .motivation-card img {
+        width: 70px;
+    }
+
+    .motivation .motivation-card p {
+        font-size: 20px;
+        line-height: 27px;
+    }
+
+    .motivation h3 {
+        font-size: 42px;
+        line-height: 50px;
+        text-align: center;
+        margin: 24px auto;
+    }
+
+    footer .container {
+        background-color: transparent;
+        padding: 30px 50px 30px;
+    }
+
+    footer .footer-logo {
+        display: none;
+    }
+
+    footer .contacts {
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        margin: 40px auto;
+        gap: 30px;
+    }
+
+    footer .subscribe {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    footer .subscribe input {
+        width: 100%;
+    }
+    footer .social {
+        margin-bottom: 0;
+        margin: 30px auto;
+    }
+    footer .copyright img {
+        width: 40px;
+    }
+    footer .copyright p {
+        font-size: 30px;
+        line-height: 1.4;
+    }
+    footer .logo-phone {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 40px auto;
+    }
+    footer .logo-phone img {
+        width: 250px;
+    }
+
+    }
+
+@media screen and  (max-width: 1050px) {
+    header .container {
+        padding: 35px 40px;
+    }
+
+    nav {
+        gap: 20px;
+    }
+
+    nav a {
+        font-size: 18px;
+        line-height: 1.4;
+        text-align: center;
+    }
+
+    .search-wrapper input {
+        font-size: 14px;
+        line-height: 20px;
+        max-width: 150px;
+    }
+}
