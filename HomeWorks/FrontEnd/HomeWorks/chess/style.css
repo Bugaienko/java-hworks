@@ -1,0 +1,87 @@
+.table-wrapper {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.table {
+    width: 640px;
+    height: 640px;
+    display: flex;
+    flex-wrap: wrap;
+    cursor: pointer;
+
+}
+.cell {
+    width: 80px;
+    height: 80px;
+    box-sizing: border-box;
+    border: 1px solid black;
+}
+.cell:nth-child(2n+1) {
+    background-color: saddlebrown;
+}
+.cell:nth-child(2n+2) {
+    background-color: bisque;
+}
+
+.cell:nth-child(2n+9) {
+    background-color: bisque;
+}
+.cell:nth-child(2n+10) {
+    background-color: saddlebrown;
+}
+.cell:nth-child(2n+17) {
+    background-color: saddlebrown;
+}
+.cell:nth-child(2n+18) {
+    background-color: bisque;
+}
+.cell:nth-child(2n+25) {
+    background-color: bisque;
+}
+.cell:nth-child(2n+26) {
+    background-color: saddlebrown;
+}
+.cell:nth-child(2n+33) {
+    background-color: saddlebrown;
+}
+.cell:nth-child(2n+34) {
+    background-color: bisque;
+}
+.cell:nth-child(2n+41) {
+    background-color: bisque;
+}
+.cell:nth-child(2n+42) {
+    background-color: saddlebrown;
+}
+.cell:nth-child(2n+49) {
+    background-color: saddlebrown;
+}
+.cell:nth-child(2n+50) {
+    background-color: bisque;
+}
+.cell:nth-child(2n+57) {
+    background-color: bisque;
+
+}
+.cell:nth-child(2n+58) {
+    background-color: saddlebrown;
+}
+
+.cell.active {
+    /*background-color: lime;    */
+    background-image: url("kon80_yellow.jpg");
+
+}
+.cell.horse {
+    background-color: green;
+    background-image: url("kon80.jpg");
+}
+h1 {
+    text-align: center;
+    color: navy;
+}
+
+
