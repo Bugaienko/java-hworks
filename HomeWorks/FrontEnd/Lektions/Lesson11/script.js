@@ -92,3 +92,81 @@ console.log(fruit2)
 // 	// console.log('fruit', fruit)
 // 	console.log(`${name} со скидкой стоит ${price * SALE}`)
 // }
+//
+// const  number = +prompt('Enter number')
+// alert(number ** 2)
+
+// function promptNumber() {
+// 	let number = +prompt('Enter number')
+// 	// if (number % 2 === 0) {
+// 	// 	alert("ДА")
+// 	// } else {
+// 	// 	alert("НЕТ")
+// 	// }
+// 	const answer = (number % 2 === 0) ? 'YES' : 'NO'
+// 	alert(answer)
+// }
+//
+// promptNumber()
+// promptNumber()
+
+// function maxPrint(n1, n2) {
+// 	const number = (n1 > n2) ? n1 : n2
+// 	console.log(number)
+// }
+//
+// maxPrint(5, 12)
+
+const power = (number, n) => {
+	return number ** n
+}
+
+console.log(power(7,3))
+
+// Function declaration - можно вызвать в коде до объявления
+function isEvent (n) {
+	return n % 2 === 0
+}
+
+// Function expression - можно вызвать в коде только после объявления
+const isEven = (n) => {
+  return (n % 2 === 0)
+}
+
+// console.log(isEven(12))
+// console.log(isEven(13))
+
+// const fruits = [
+// 	{name: 'Apple', price: 15},
+// 	{name: 'Banana', price: 10},
+// 	{name: 'Potato', price: 5},
+// 	{name: 'fruit1', price: 11},
+// 	{name: 'fruit2', price: 34},
+// ]
+
+const saleFruits = fruits.map(fruit => {
+	return {
+		name: fruit.name,
+		prise: fruit.price * 0.8
+	}
+})
+
+console.log(saleFruits)
+
+const toArray = (n) => {
+  const result = []
+	if (n >= 0 ){
+		for (let i = 0; i <= n; i++) {
+			result.push(i)
+		}
+	} else {
+		for (let i = 0; i >= n; i--) {
+			result.push(i)
+		}
+	}
+
+	return result
+}
+
+console.log(toArray(5))
+console.log(toArray(-5))
