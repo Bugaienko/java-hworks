@@ -1,0 +1,17 @@
+img {
+    max-width: 250px;
+}
+
+img:nth-child(-n + 8) {
+    border: 1px solid black;
+}
+#root {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+#root div {
+    border: 1px silver solid;
+}
